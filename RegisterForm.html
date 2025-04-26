@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 25px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 60px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .gender-group {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Registration Form</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+
+    <label>Gender:</label>
+    <div class="gender-group">
+      <input type="radio" name="gender" value="male" id="male">
+      <label for="male" style="display:inline;">Male</label>
+      <input type="radio" name="gender" value="female" id="female">
+      <label for="female" style="display:inline;">Female</label>
+    </div>
+
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age">
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+
+    <label for="course">Course:</label>
+    <select name="course" id="course">
+      <option>HTML</option>
+      <option>CSS</option>
+    </select>
+
+    <label for="comments">Comments:</label>
+    <textarea name="comments" id="comments"></textarea>
+
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
